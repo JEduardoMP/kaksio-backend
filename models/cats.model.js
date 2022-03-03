@@ -23,7 +23,7 @@ const Cats = db.define(
 			allowNull: false,
 		},
 		data: {
-			type: DataTypes.STRING(255),
+			type: DataTypes.STRING(),
 			allowNull: false,
 		},
 	},

@@ -14,7 +14,7 @@ exports.getAllCats = async (req, res, next) => {
 
     res.status(200).json({
       status: 'success',
-      data: { catFormat },
+      data: catFormat,
     });
   } catch (error) {
     console.log(error);
