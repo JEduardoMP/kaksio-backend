@@ -3,7 +3,7 @@ const globalErrorHandler = (err, req, res, next) => {
 		status: err.status,
 		message: err.message,
 		stack: err.stack,
-	});
+	}); 
 };
 
 module.exports = { globalErrorHandler };

@@ -4,7 +4,7 @@ const cors = require('cors');
 const { globalErrorHandler } = require('./controllers/error.controller');
 
 // Routes
-const { todosRouter } = require("./routes/todos.router");
+const { catsRouter } = require("./routes/cats.router");
 
 const app = express();
 
@@ -13,9 +13,9 @@ app.use(express.json());
 
 app.use('*', cors());
 
-app.use(globalErrorHandler);
-
 // Endpoints
-app.use("/api/v1/cats", todosRouter);
+app.use("/api/v1/cats", catsRouter);
+
+app.use(globalErrorHandler);
 
 module.exports = { app };
